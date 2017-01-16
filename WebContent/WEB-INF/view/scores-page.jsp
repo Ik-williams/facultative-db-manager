@@ -14,56 +14,6 @@
 </head>
 
 <body>
-
-	
-		<div id="heading">	
-			<h2>Scores List</h2>
-		</div>
-	
-		<input type="submit" value="Add Score"
-				   onclick="window.location.href='showFormForAdd'; return false;"
-				   class="save" />
-		<br>
-		<br>		   		   
-	<table>
-	
-		<tr>
-			<th>Score</th>
-			<th>Maximum-Score</th>
-			<th>Minimum-Score</th>
-			<th>Actions</th>
-		</tr>
-		
-		<c:forEach var="tempScore" items="${scores}">
-		
-		<c:url var="updateLink" value="/score/showFormForUpdate">
-					<c:param name="scoreId" value="${tempScore.id}"></c:param>
-				</c:url>
-		<c:url var="deleteLink" value="/score/delete">
-					<c:param name="scoreId" value="${tempScore.id}"></c:param>
-				</c:url>
-		<tr>
-			<td>${tempScore.score}</td>
-			<td>${tempScore.maxScore}</td>
-			<td>${tempScore.minScore}</td>
-			<td>
-							<a href="${updateLink}">Update</a>
-							|
-							<a href="${deleteLink}"
-							onclick="if(!(confirm('Are you sure you want to delete this score?')))return false">Delete</a>
-			</td>
-		</tr>
-		
-		</c:forEach>
-	
-	</table>
-	<br><br>
-	<a href="${pageContext.request.contextPath}/lecturer/showLecturers" class="zone">lecturers page</a>
-	//////////
-	<a href="${pageContext.request.contextPath}/student/showStudents" class="zone">students page</a>
-	<br><br>
-	
-		<p></p>
 	
 	<table class="nodesign" >
 	 	
@@ -297,11 +247,56 @@
     </div></td>
     </tr>
     </table>
-	<footer>
+    <p></p>
 	
-		<p style="text-indent: 94%;">  <i>GINEE®</i>  </p>
+		<div id="heading">	
+			<h2>Scores List</h2>
+		</div>
+	
+		<input type="submit" value="Add Score"
+				   onclick="window.location.href='showFormForAdd'; return false;"
+				   class="save" />
+		<br>
+		<br>		   		   
+	<table>
+	
+		<tr>
+			<th>Score</th>
+			<th>Maximum-Score</th>
+			<th>Minimum-Score</th>
+			<th>Actions</th>
+		</tr>
 		
-		</footer>
+		<c:forEach var="tempScore" items="${scores}">
+		
+		<c:url var="updateLink" value="/score/showFormForUpdate">
+					<c:param name="scoreId" value="${tempScore.id}"></c:param>
+				</c:url>
+		<c:url var="deleteLink" value="/score/delete">
+					<c:param name="scoreId" value="${tempScore.id}"></c:param>
+				</c:url>
+		<tr>
+			<td>${tempScore.score}</td>
+			<td>${tempScore.maxScore}</td>
+			<td>${tempScore.minScore}</td>
+			<td>
+							<a href="${updateLink}">Update</a>
+							|
+							<a href="${deleteLink}"
+							onclick="if(!(confirm('Are you sure you want to delete this score?')))return false">Delete</a>
+			</td>
+		</tr>
+		
+		</c:forEach>
+	
+	</table>
+	<br><br>
+	<a href="${pageContext.request.contextPath}/lecturer/showLecturers" class="zone">lecturers page</a>
+	//////////
+	<a href="${pageContext.request.contextPath}/student/showStudents" class="zone">students page</a>
+	<br><br>
+	
+		<p style="text-indent: 94%">  <i>GINEE®</i>  </p>
 		
 
 </body>
