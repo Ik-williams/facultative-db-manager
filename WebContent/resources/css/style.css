@@ -10,6 +10,24 @@ table {
     
 }
 
+table.nodesign{
+	background-color:#416868;
+	border-color: #416868;
+	 border-collapse: collapse;
+	 border:1px solid #416868;
+}
+td.nodesign{
+	border:1px solid #416868;
+}
+tr.nodesign:hover{
+	background-color:#416868;
+	border-color: #416868;
+	border:1px solid #416868;
+	}
+th.nodesign{
+	border:1px solid #416868;
+}
+
  td {
     padding: 8px;
     text-align: left;
@@ -53,14 +71,19 @@ a:link {
     color: lime;
 }
 
+
 a:visited {
     color: white;
-}
+} 
 
 a:hover {
     color: silver;
 }
 
+table.myForm {
+	
+	width: 25%;
+}
 a.zone {
 	
     color: lime;
@@ -68,16 +91,16 @@ a.zone {
 	font-style: italic;
 	font-family: monospace;
 	text-decoration: none;
-	padding:5px;
 }
 
 a.zone:hover {
     color: silver;
 }
 
+
 a:active {
     color: blue;
-}
+} 
 
 .save {
     display: inline-block;

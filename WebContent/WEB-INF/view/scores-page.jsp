@@ -8,6 +8,9 @@
 	<link type="text/css" 
 		  rel="stylesheet" 
 		  href="${pageContext.request.contextPath}/resources/css/style.css" />
+		  <link type="text/css" 
+		  rel="stylesheet" 
+		  href="${pageContext.request.contextPath}/resources/css/style3.css" />
 </head>
 
 <body>
@@ -55,11 +58,252 @@
 	
 	</table>
 	<br><br>
-
 	<a href="${pageContext.request.contextPath}/lecturer/showLecturers" class="zone">lecturers page</a>
 	//////////
 	<a href="${pageContext.request.contextPath}/student/showStudents" class="zone">students page</a>
+	<br><br>
 	
+		<p></p>
+	
+	<table class="nodesign" >
+	 	
+	 	<tr class="nodesign">
+		<td class="nodesign"> 
+	    <div class="wrapper">
+        <div class="line line1">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line2">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line3">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line4">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line5">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line6">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line7">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line8">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line9">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line10">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line11">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+    </div>
+    </td>
+    <td class="nodesign">
+    <div class="wrapper">
+        <div class="line line1">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line2">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line3">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line4">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line5">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line6">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line7">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line8">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line9">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line10">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+        <div class="line line11">
+            <span class="circle circle-top"></span>
+            <div class="dotted">
+                <span class="dot dot-top"></span>
+                <span class="dot dot-middle-top"></span>
+                <span class="dot dot-middle-bottom"></span>
+                <span class="dot dot-bottom"></span>
+            </div>
+            <span class="circle circle-bottom"></span>
+        </div>
+    </div></td>
+    </tr>
+    </table>
+	<footer>
+	
+		<p style="text-indent: 94%;">  <i>GINEE®</i>  </p>
+		
+		</footer>
+		
+
 </body>
 
 </html>

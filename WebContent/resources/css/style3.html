@@ -1,51 +1,5 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<!doctype html>
-<html>
-
-<head>
-
-	<title>score form</title>
-	<link type="text/css" 
-		  rel="stylesheet" 
-		  href="${pageContext.request.contextPath}/resources/css/style.css" />
-		  <link type="text/css" 
-		  rel="stylesheet" 
-		  href="${pageContext.request.contextPath}/resources/css/style3.css" />
-</head>
-
 <body>
-	
-	<form:form action="saveScore" modelAttribute='score' method='Post'>
-			
-			<form:hidden path="id" />
-		
-			<table class="myForm">
-				<tbody>
-					<tr>
-						<td><label>Score:</label></td>
-						<td><form:input path="score" /></td>
-					</tr>
-					<tr>
-						<td><label>max-score:</label></td>
-						<td><form:input path="maxScore" /></td>
-					</tr>	
-					<tr>
-						<td><label>min-score:</label></td>
-						<td><form:input path="minScore" /></td>
-					</tr>
-					<tr>
-						<td><label></label></td>
-						<td><input type="submit" value="save" class="save" /></td>
-					</tr>		
-				</tbody>
-			</table>
-		
-		</form:form>
-		<br><br>
-		<a href="${pageContext.request.contextPath}/score/showScores" class='zone'>Back</a>
-
-		<br><br>
-		<div class="wrapper">
+    <div class="wrapper">
         <div class="line line1">
             <span class="circle circle-top"></span>
             <div class="dotted">
@@ -157,6 +111,3 @@
             <span class="circle circle-bottom"></span>
         </div>
     </div>
-</body>
-
-</html>

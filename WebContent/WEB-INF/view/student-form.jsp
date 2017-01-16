@@ -16,7 +16,7 @@
 			
 			<form:hidden path="id" />
 			
-			<table>
+			<table class="myForm">
 				<tbody>
 					<tr>
 						<td><label>First name:</label></td>
