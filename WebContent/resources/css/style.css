@@ -58,7 +58,21 @@ a:visited {
 }
 
 a:hover {
-    color: green;
+    color: silver;
+}
+
+a.zone {
+	
+    color: lime;
+    font-size: 14px;
+	font-style: italic;
+	font-family: monospace;
+	text-decoration: none;
+	padding:5px;
+}
+
+a.zone:hover {
+    color: silver;
 }
 
 a:active {

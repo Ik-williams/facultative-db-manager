@@ -38,6 +38,8 @@
 			</table>
 		
 		</form:form>
+		<br><br>
+		<a href="${pageContext.request.contextPath}/score/showScores" class='zone'>Back</a>
 
 </body>
 

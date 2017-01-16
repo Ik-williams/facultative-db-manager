@@ -54,6 +54,12 @@
 		</c:forEach>
 	
 	</table>
+	<br><br>
+
+	<a href="${pageContext.request.contextPath}/lecturer/showLecturers" class="zone">lecturers page</a>
+	//////////
+	<a href="${pageContext.request.contextPath}/student/showStudents" class="zone">students page</a>
+	
 </body>
 
 </html>

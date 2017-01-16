@@ -4,7 +4,7 @@
 
 <head>
 
-	<title>student form</title>
+	<title>lecturer form</title>
 	<link type="text/css" 
 		  rel="stylesheet" 
 		  href="${pageContext.request.contextPath}/resources/css/style.css" />
@@ -12,7 +12,7 @@
 
 <body>
 	
-	<form:form action="saveStudent" modelAttribute='student' method='Post'>
+	<form:form action="saveLecturer" modelAttribute='lecturer' method='Post'>
 			
 			<form:hidden path="id" />
 			
@@ -52,7 +52,7 @@
 		</form:form>
 		<br><br>
 			<p>
-				<a href="${pageContext.request.contextPath}/student/showStudents" class="zone">Back</a>
+				<a href="${pageContext.request.contextPath}/lecturer/showLecturers" class="zone">Back</a>
 			</p>
 </body>
 
