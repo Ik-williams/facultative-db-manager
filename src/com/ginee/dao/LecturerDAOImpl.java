@@ -59,7 +59,7 @@ public class LecturerDAOImpl implements LecturerDAO {
 		Session session = sessionFactory.getCurrentSession();
 		
 		@SuppressWarnings("rawtypes")
-		Query query = session.createQuery("delete from lecturer where id=:lecturerId ");
+		Query query = session.createQuery("delete from Lecturer where id=:lecturerId ");
 		
 		
 		query.setParameter("lecturerId", lecturer_id);

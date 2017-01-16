@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table
+@Table(name="course")
 public class Course {
 
 	@Id
@@ -19,13 +19,13 @@ public class Course {
 	@Column(name="name")
 	private String name;
 	
-	@Column(name="#of_lectures")
+	@Column(name="no_lectures")
 	private int no_lectures;
 	
-	@Column(name="#of_students")
+	@Column(name="no_students")
 	private int no_students;
 	
-	@Column(name="#of_lecturers")
+	@Column(name="no_lecturers")
 	private int no_lecturers;
 	
 	

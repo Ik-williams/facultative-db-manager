@@ -4,7 +4,7 @@
 
 <head>
 
-	<title>lecturers-page</title>
+	<title>courses-page</title>
 	<link type="text/css" 
 		  rel="stylesheet" 
 		  href="${pageContext.request.contextPath}/resources/css/style.css" />
@@ -250,10 +250,10 @@
     <br><br>
 	
 		<div id="heading">	
-			<h2>Lecturers List</h2>
+			<h2>Courses List</h2>
 		</div>
 	
-		<input type="submit" value="Add Lecturer"
+		<input type="submit" value="Add Course"
 				   onclick="window.location.href='showFormForAdd'; return false;"
 				   class="save" />
 		<br>
@@ -261,33 +261,31 @@
 	<table>
 	
 		<tr>
-			<th>First name</th>
-			<th>Last name</th>
-			<th>Email</th>
-			<th>Age</th>
-			<th>Gender</th>
+			<th>Name</th>
+			<th>No of lectures</th>
+			<th>No of students</th>
+			<th>No of lecturers</th>
 			<th>Actions</th>
 		</tr>
 		
-		<c:forEach var="tempLecturer" items="${lecturers}">
+		<c:forEach var="tempCourse" items="${courses}">
 		
-		<c:url var="updateLink" value="/lecturer/showFormForUpdate">
-					<c:param name="lecturerId" value="${tempLecturer.id}"></c:param>
+		<c:url var="updateLink" value="/course/showFormForUpdate">
+					<c:param name="courseId" value="${tempCourse.id}"></c:param>
 				</c:url>
-		<c:url var="deleteLink" value="/lecturer/delete">
-					<c:param name="lecturerId" value="${tempLecturer.id}"></c:param>
+		<c:url var="deleteLink" value="/course/delete">
+					<c:param name="courseId" value="${tempCourse.id}"></c:param>
 				</c:url>
 		<tr>
-			<td>${tempLecturer.firstName}</td>
-			<td>${tempLecturer.lastName}</td>
-			<td>${tempLecturer.email}</td>
-			<td>${tempLecturer.age}</td>
-			<td>${tempLecturer.gender}</td>
+			<td>${tempCourse.name}</td>
+			<td>${tempCourse.no_lectures}</td>
+			<td>${tempCourse.no_students}</td>
+			<td>${tempCourse.no_lecturers}</td>
 			<td>
 							<a href="${updateLink}">Update</a>
 							|
 							<a href="${deleteLink}"
-							onclick="if(!(confirm('Are you sure you want to delete this lecturer?')))return false">Delete</a>
+							onclick="if(!(confirm('Are you sure you want to delete this course?')))return false">Delete</a>
 			</td>
 		</tr>
 		
@@ -298,7 +296,7 @@
 	//////////
 	<a href="${pageContext.request.contextPath}/score/showScores" class="zone">Scores page</a>
 	//////////
-	<a href="${pageContext.request.contextPath}/course/showCourses" class="zone">Courses page</a>
+	<a href="${pageContext.request.contextPath}/lecturer/showLecturers" class="zone">Lecturers page</a>
 	<br><br>
 	
 		<p style="text-indent: 94%;">  <i>GINEE®</i>  </p>

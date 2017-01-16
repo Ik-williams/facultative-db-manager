@@ -297,6 +297,8 @@
 	<a href="${pageContext.request.contextPath}/lecturer/showLecturers" class="zone">lecturers page</a>
 	//////////
 	<a href="${pageContext.request.contextPath}/score/showScores" class="zone">Scores page</a>
+	//////////
+	<a href="${pageContext.request.contextPath}/course/showCourses" class="zone">Courses page</a>
 	<br><br>
 	 
 		<p style="text-indent: 94%;">  <i>GINEE®</i>  </p>
