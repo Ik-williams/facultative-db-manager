@@ -1,5 +1,8 @@
 package com.ginee.entity;
 
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -7,6 +10,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -34,6 +38,8 @@ public class Student {
 	@Enumerated(EnumType.STRING)
 	private Gender gender;
 	
+    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
+	private Set<Score> scores;
 	
 	public Student() {
 		
@@ -115,6 +121,21 @@ public class Student {
 	public enum Gender{
 		Male,Female
 	}
+
+	
+
+	public Set<Score> getScores() {
+		return scores;
+	}
+
+
+
+
+	public void setScores(Set<Score> scores) {
+		this.scores = scores;
+	}
+
+
 
 
 	@Override
