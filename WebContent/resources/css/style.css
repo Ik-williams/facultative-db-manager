@@ -1,0 +1,92 @@
+html, body{
+	background-color:#416868;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border:1px solid #ddd;
+    
+}
+
+ td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid aqua;
+    font-family: monospace;
+    font-style: italic;
+    color:white;
+}
+
+
+th {
+	padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-top:1px solid #ddd;
+	font-size: 15px;
+	font-style: italic;
+	font-family: monospace;
+	color:aqua;
+	border-color: aqua;
+}
+
+tr {
+	border:1px solid #ddd;
+	border-color: aqua;
+}
+tr:hover {
+	background-color: navy;
+}
+
+#heading {
+	
+	font-size: 25px;
+	font-style: italic;
+	font-family: monospace;
+	color:aqua;
+	text-align: center;
+}
+
+a:link {
+    color: lime;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: blue;
+}
+
+.save {
+    display: inline-block;
+    padding: 4px 6px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: aqua;
+    border: none;
+    box-shadow: 0 1px #999;
+	border-radius: 12px;
+}
+
+.save:hover {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24), 0 1px 1px 0 rgba(0,0,0,0.19);
+    background-color: silver;
+}
+
+.save:active {
+  background-color: aqua;
+  box-shadow: 0 1px grey;
+  transform: translateY(4px);
+}
