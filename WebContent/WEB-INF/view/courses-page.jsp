@@ -264,7 +264,6 @@
 			<th>Name</th>
 			<th>No of lectures</th>
 			<th>No of students</th>
-			<th>No of lecturers</th>
 			<th>Actions</th>
 		</tr>
 		
@@ -280,7 +279,6 @@
 			<td>${tempCourse.name}</td>
 			<td>${tempCourse.no_lectures}</td>
 			<td>${tempCourse.no_students}</td>
-			<td>${tempCourse.no_lecturers}</td>
 			<td>
 							<a href="${updateLink}">Update</a>
 							|

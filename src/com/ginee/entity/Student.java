@@ -1,16 +1,17 @@
 package com.ginee.entity;
 
+import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -38,15 +39,18 @@ public class Student {
 	@Enumerated(EnumType.STRING)
 	private Gender gender;
 	
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
-	private Set<Score> scores;
+	@ManyToMany(fetch = FetchType.LAZY, mappedBy = "students")
+	private Set<Score> scores = new HashSet<Score>();
+    
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "students")
+	private Set<Course> courses = new HashSet<Course>();
+    
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "students")
+	public Set<Lecturer> lecturers = new HashSet<Lecturer>();
 	
 	public Student() {
 		
 	}
-
-	
-	
 
 	public Student(String firstName, String lastName, int age, Gender gender, String email ) {
 		super();
@@ -135,6 +139,20 @@ public class Student {
 		this.scores = scores;
 	}
 
+	
+
+
+	public Set<Lecturer> getLecturers() {
+		return lecturers;
+	}
+
+
+
+
+	public void setLecturers(Set<Lecturer> lecturers) {
+		this.lecturers = lecturers;
+	}
+
 
 
 
@@ -143,6 +161,11 @@ public class Student {
 		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
 				+ ", age=" + age + ", gender=" + gender + "]";
 	}
+
+
+
+
+	
 	
 	
 }

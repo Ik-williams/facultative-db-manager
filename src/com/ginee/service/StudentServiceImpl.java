@@ -15,7 +15,6 @@ public class StudentServiceImpl implements StudentService {
 	@Autowired
 	private StudentDAO studentDAO;
 	
-	
 	@Override
 	@Transactional
 	public List<Student> getStudents() {

@@ -269,7 +269,6 @@
 		</tr>
 		
 		<c:forEach var="tempStudent" items="${students}">
-		
 		<c:url var="updateLink" value="/student/showFormForUpdate">
 					<c:param name="studentId" value="${tempStudent.id}"></c:param>
 				</c:url>
@@ -289,7 +288,7 @@
 							onclick="if(!(confirm('Are you sure you want to delete this student?')))return false">Delete</a>
 			</td>
 		</tr>
-		
+
 		</c:forEach>
 	
 	</table>

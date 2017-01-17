@@ -16,17 +16,11 @@ public class Assessment {
 	@Column(name="id")
 	private int id;
 	
-	@Column(name="student_first_name")
-	private String studentFirstName;
+	@Column(name="student_name")
+	private String studentFullName;
 	
-	@Column(name="student_last_name")
-	private String studentLastName;
-	
-	@Column(name="lecturer_first_name")
-	private String lecturerFirstName;
-	
-	@Column(name="lecturer_last_name")
-	private String lecturerLastName;
+	@Column(name="lecturer_name")
+	private String lecturerFullName;
 	
 	@Column(name="score")
 	private int score;
@@ -40,13 +34,10 @@ public class Assessment {
 	}
 
 
-	public Assessment(String studentFirstName, String studentLastName, String lecturerFirstName,
-			String lecturerLastName, int score, String courseName) {
+	public Assessment(String studentFullName, String lecturerFullName, int score, String courseName) {
 		super();
-		this.studentFirstName = studentFirstName;
-		this.studentLastName = studentLastName;
-		this.lecturerFirstName = lecturerFirstName;
-		this.lecturerLastName = lecturerLastName;
+		this.studentFullName = studentFullName;
+		this.lecturerFullName = lecturerFullName;
 		this.score = score;
 		this.courseName = courseName;
 	}
@@ -62,43 +53,23 @@ public class Assessment {
 	}
 
 
-	public String getStudentFirstName() {
-		return studentFirstName;
+	public String getStudentFullName() {
+		return studentFullName;
 	}
 
 
-	public void setStudentFirstName(String studentFirstName) {
-		this.studentFirstName = studentFirstName;
+	public void setStudentFullName(String studentFullName) {
+		this.studentFullName = studentFullName;
 	}
 
 
-	public String getStudentLastName() {
-		return studentLastName;
+	public String getLecturerFullName() {
+		return lecturerFullName;
 	}
 
 
-	public void setStudentLastName(String studentLastName) {
-		this.studentLastName = studentLastName;
-	}
-
-
-	public String getLecturerFirstName() {
-		return lecturerFirstName;
-	}
-
-
-	public void setLecturerFirstName(String lecturerFirstName) {
-		this.lecturerFirstName = lecturerFirstName;
-	}
-
-
-	public String getLecturerLastName() {
-		return lecturerLastName;
-	}
-
-
-	public void setLecturerLastName(String lecturerLastName) {
-		this.lecturerLastName = lecturerLastName;
+	public void setLecturerFullName(String lecturerFullName) {
+		this.lecturerFullName = lecturerFullName;
 	}
 
 
@@ -120,6 +91,6 @@ public class Assessment {
 	public void setCourseName(String courseName) {
 		this.courseName = courseName;
 	}
-	
+
 
 }

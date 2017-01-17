@@ -1,10 +1,17 @@
 package com.ginee.entity;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -30,6 +37,18 @@ public class Lecturer {
 	
 	@Column(name="gender")
 	private String gender;
+	
+	@ManyToMany(fetch = FetchType.LAZY)
+	 @JoinTable(name = "lecturer_course", 
+	             joinColumns = { @JoinColumn(name = "lecturer_id") }, 
+	             inverseJoinColumns = { @JoinColumn(name = "course_id") })
+	private Set<Course> courses = new HashSet<Course>();
+	
+	 @ManyToMany(fetch = FetchType.LAZY)
+	 @JoinTable(name = "lecturer_student", 
+	             joinColumns = { @JoinColumn(name = "lecturer_id") }, 
+	             inverseJoinColumns = { @JoinColumn(name = "student_id") })
+	 private Set<Student> students = new HashSet<Student>();
 	
 	public Lecturer() {
 		
@@ -91,5 +110,28 @@ public class Lecturer {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
+
+	public Set<Course> getCourses() {
+		return courses;
+	}
+
+	public void setCourses(Set<Course> courses) {
+		this.courses = courses;
+	}
+
+	public Set<Student> getStudents() {
+		return students;
+	}
+
+	public void setStudents(Set<Student> students) {
+		this.students = students;
+	}
+
+	@Override
+	public String toString() {
+		return "Lecturer [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
+				+ ", age=" + age + ", gender=" + gender + "]";
+	}
+
 	
 }

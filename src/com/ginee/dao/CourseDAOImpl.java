@@ -10,10 +10,8 @@ import org.springframework.stereotype.Repository;
 
 import com.ginee.entity.Course;
 
-
 @Repository
 public class CourseDAOImpl implements CourseDAO {
-
 
 	@Autowired
 	private SessionFactory sessionFactory;
@@ -67,5 +65,6 @@ public class CourseDAOImpl implements CourseDAO {
 		query.executeUpdate();
 		
 	}
+
 
 }

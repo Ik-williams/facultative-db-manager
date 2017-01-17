@@ -67,5 +67,4 @@ public class LecturerDAOImpl implements LecturerDAO {
 		query.executeUpdate();
 		
 	}
-
 }

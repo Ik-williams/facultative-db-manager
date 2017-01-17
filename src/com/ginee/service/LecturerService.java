@@ -15,5 +15,8 @@ public interface LecturerService {
 	Lecturer getLecturer(int lecturer_id);
 
 	void deleteLecturer(int lecturer_id);
+
+	
+
 	
 }

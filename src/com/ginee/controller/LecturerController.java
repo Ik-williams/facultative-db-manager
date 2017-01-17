@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+
 import com.ginee.entity.Lecturer;
 import com.ginee.service.LecturerService;
 
@@ -21,6 +22,7 @@ public class LecturerController {
 
 	@Autowired
 	private LecturerService lecturerService;
+	
 	
 	@GetMapping("/showLecturers")
 	public String showStudents(Model model) {
@@ -64,11 +66,12 @@ public class LecturerController {
 	}
 	
 	@GetMapping("/delete")
-	public String deleteStudent(@RequestParam("lecturerId") int lecturer_id) {
+	public String deleteLecturer(@RequestParam("lecturerId") int lecturer_id) {
 		
 		lecturerService.deleteLecturer(lecturer_id);
 		
 		
 		return "redirect:/lecturer/showLecturers";
 	}
+	
 }

@@ -277,6 +277,9 @@
 		<c:url var="deleteLink" value="/lecturer/delete">
 					<c:param name="lecturerId" value="${tempLecturer.id}"></c:param>
 				</c:url>
+		<c:url var="showCourse" value="course/showLecturerCourses">
+					<c:param name="lecturerId" value="${tempLecturer.id}"></c:param>
+		</c:url>
 		<tr>
 			<td>${tempLecturer.firstName}</td>
 			<td>${tempLecturer.lastName}</td>
@@ -288,6 +291,8 @@
 							|
 							<a href="${deleteLink}"
 							onclick="if(!(confirm('Are you sure you want to delete this lecturer?')))return false">Delete</a>
+							|
+							<a href="${showCourse}">Courses</a>
 			</td>
 		</tr>
 		
