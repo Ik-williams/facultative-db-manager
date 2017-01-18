@@ -27,8 +27,8 @@ public class CourseController {
 	public String showCourses(Model model) {
 		
 		List< Course> courses = courseService.getCourses();
-		
 		model.addAttribute("courses", courses);
+		
 		
 		return "courses-page";
 	}

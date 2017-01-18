@@ -4,7 +4,7 @@
 
 <head>
 
-	<title>course form</title>
+	<title>assessment form</title>
 	<link type="text/css" 
 		  rel="stylesheet" 
 		  href="${pageContext.request.contextPath}/resources/css/style.css" />
@@ -12,27 +12,27 @@
 
 <body>
 	
-	<form:form action="saveCourse" modelAttribute='course' method='Post'>
+	<form:form action="saveAssessment" modelAttribute='assessment' method='Post'>
 			
 			<form:hidden path="id" />
 			
 			<table class="myForm">
 				<tbody>
 					<tr>
-						<td><label>Name:</label></td>
-						<td><form:input path="name" /></td>
+						<td><label>Student Name:</label></td>
+						<td><form:input path="studentFullName" /></td>
 					</tr>
 					<tr>
-						<td><label>No of lectures:</label></td>
-						<td><form:input path="no_lectures" /></td>
+						<td><label>Lecturer Name:</label></td>
+						<td><form:input path="lecturerFullName" /></td>
 					</tr>	
 					<tr>
-						<td><label>No of students:</label></td>
-						<td><form:input path="no_students" /></td>
+						<td><label>Course:</label></td>
+						<td><form:input path="courseName" /></td>
 					</tr>
 					<tr>
-						<td><label>No of lecturers:</label></td>
-						<td><form:input path="no_lecturers" /></td>
+						<td><label>Score:</label></td>
+						<td><form:input path="score" /></td>
 					</tr>
 					<tr>
 						<td><label></label></td>
@@ -44,7 +44,7 @@
 		</form:form>
 		<br><br>
 			<p>
-				<a href="${pageContext.request.contextPath}/course/showCourses" class="zone">Back</a>
+				<a href="${pageContext.request.contextPath}/assessment/showAssessments" class="zone">Back</a>
 			</p>
 			<br><br>
 			   <div class="wrapper">
